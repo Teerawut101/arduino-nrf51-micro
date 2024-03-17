@@ -1,0 +1,42 @@
+menu.chip=Chip
+menu.softdevice=Softdevice
+menu.version=Version
+menu.lfclk=Low Frequency Clock
+menu.board_variant=Board Variant
+
+# nRF51micro
+###################
+nRF51micro.name=nRF51 micro
+
+nRF51micro.vid.0=0x0d28
+nRF51micro.pid.0=0x0204
+
+nRF51micro.upload.tool=nrf51micro:openocd
+nRF51micro.upload.protocol=cmsis-dap
+nRF51micro.upload.target=nrf51
+nRF51micro.upload.maximum_size=262144
+nRF51micro.upload.setup_command=transport select swd;
+nRF51micro.upload.use_1200bps_touch=false
+nRF51micro.upload.wait_for_upload_port=false
+nRF51micro.upload.native_usb=false
+
+nRF51micro.bootloader.tool=nrf51micro:openocd
+
+nRF51micro.build.mcu=cortex-m0
+nRF51micro.build.f_cpu=16000000
+nRF51micro.build.board=nrf51micro
+nRF51micro.build.core=nRF5
+nRF51micro.build.variant=nrf51micro
+nRF51micro.build.variant_system_lib=
+nRF51micro.build.extra_flags=-DNRF51
+nRF51micro.build.float_flags=
+nRF51micro.build.ldscript=nrf51_xxaa.ld
+
+nRF51micro.build.lfclk_flags=-DUSE_LFRC
+
+nRF51micro.menu.softdevice.s110=S110
+nRF51micro.menu.softdevice.s110.softdevice=s110
+nRF51micro.menu.softdevice.s110.softdeviceversion=8.0.0
+nRF51micro.menu.softdevice.s110.upload.maximum_size=151552
+nRF51micro.menu.softdevice.s110.build.extra_flags=-DNRF51 -DS110 -DNRF51_S110
+nRF51micro.menu.softdevice.s110.build.ldscript=armgcc_s110_nrf51822_xxaa.ld
