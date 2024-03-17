@@ -19,7 +19,7 @@
           },
           "url": "https://github.com/jcubuntu/arduino-nrf51-micro/archive/0.1.0.tar.gz",
           "archiveFileName": "arduino-nrf51-micro-0.1.0.tar.gz",
-          "checksum": "MD5:d108750e173ca633e39230f19a22ed0d",
+          "checksum": "MD5:3a0ccfbe9a12a0506c513840df648538",
           "size": "1467588",
           "boards": [
             {"name": "nRF51 micro"}
